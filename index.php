@@ -71,16 +71,16 @@ else {
 
 // exo 12
 $pain = "vous avais mangé mon pain";
-$vie = "pain";
+$vie = "vous";
 $pose = strpos($pain, $vie);
-if($position === 0) {
+if($pose === 0) {
     echo "La chaine '$vie' est  présente en début de chaine !";
 }
 
 // exo 13
 $tarte = "j'ai mangé une tarte au sucre";
 $sucre = "sucre";
-$pose = strpos($tarte, $sucre);
-if($position === strlen($tarte) - strlen($sucre)) {
-    echo "La chaine '$sucre' est présente en début de chaine !";
+$piste = strpos($tarte, $sucre);
+if($piste === strlen($tarte) - strlen($sucre)) {
+    echo "La chaine '$sucre' est présente en fin de chaine !";
 }
